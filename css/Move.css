@@ -1,0 +1,176 @@
+html, body {
+  margin: 0;
+  padding:0;
+}
+
+h1, h2, a {
+  font-family: 'Oswald', sans-serif;
+}
+
+p {
+  font-family: Helvetica, Arial, sans-serif; 
+}
+.container {
+  width: 940px;
+  margin: 0 auto;
+}
+
+
+/* Main */
+.main {
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/move/bg.jpg) no-repeat center center;
+  background-size:cover;
+  text-align:center;
+  height: 600px;
+    color:white;
+}
+ .main .container {
+        position: relative;
+        top: 100px;
+   }
+
+.main h1 {
+  text-transform:uppercase;
+  font-size: 150px;
+  margin:0;
+  padding-bottom:0;
+}
+
+.main p {
+  margin-top:0;
+  font-size: 18px;
+}
+
+.btn{
+    text-transform:uppercase;
+    background-color: #1c1c1c;
+    color: #fff;
+    font-size: 18px;
+    padding: 8px 30px;
+   margin-bottom:50px;
+    text-decoration: none;
+    display: inline-block;
+}
+
+.btn:hover{
+  color:#1c1c1c;
+  background-color:#ffa800;
+  
+}
+
+
+/* Supporting */
+.supporting {
+  background-color:#1c1c1c;
+  text-align: center;
+  padding: 50px 0 80px;
+}
+
+.supporting .col {
+  float: left;
+  width: 28%;
+  padding: 10px;
+}
+
+.supporting h1,
+.supporting h2 {
+
+  color: #ffa800;
+  font-size: 40px;
+   margin-bottom: 10px;
+  text-transform:uppercase;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.supporting p {
+  color: #efefef;
+  margin-bottom: 20px;
+  line-height: 20px;
+  font-size: 12px;
+}
+
+.supporting .btn {
+  background-color: #eee;
+  color: #1c1c1c;
+  font-size: 18px;
+  padding: 8px 30px;
+  text-decoration: none;
+  display: inline-block;
+}
+
+/* Feature */
+.feature {
+  text-align:center;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/move/feature.jpg) no-repeat center center;
+   background-size:cover;
+  height: 600px;
+}
+.feature .container{
+  position:relative;
+  top:200px;
+}
+
+.feature h1,
+.feature h2 {
+
+  color: #fff;
+  font-size: 20px;
+  margin:0;
+  padding:50px 0 0;
+}
+
+/* Footer */
+.footer {
+    background: url(https://s3.amazonaws.com/codecademy-content/projects/move/footer.jpg) no-repeat center center;
+  background-size:cover;
+  max-width:100%;
+  
+  height: 600px;
+  text-align:center;
+}
+.footer .container{
+  position:relative;
+  top:150px;
+  
+}
+
+.footer h1,
+.footer h2 {
+
+  color: #fff;
+  font-size: 40px;
+  margin: 0 0 20px 0;
+  padding:50px 0 0;
+}
+
+.footer p {
+  color: #fff;
+  margin: 0 0 20px 0;
+  font-size: 18px;
+}
+
+
+@media (min-width:600px) {
+  .main h1 {
+    font-size: 200px;
+  }
+
+  .supporting .col {
+    width: 30%;
+  }
+
+  .supporting h2 {
+    font-size: 40px;
+  }
+
+  .supporting p {
+    font-size: 14px;
+  }
+
+  .feature h2 {
+    font-size: 60px;
+  }
+}

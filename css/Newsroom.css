@@ -1,0 +1,143 @@
+html, body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Lato', sans-serif;
+  font-weight: 300;
+}
+img{
+  height: 50px;
+  display: inline;
+}
+.header{
+  /*position:relative;*/
+  background-color:black;
+  height:120px;
+}
+.header .container{
+  padding:15px;
+}
+.header .pull-right{
+  /*position:absolute;*/
+  padding-top:20px;
+}
+.header input{
+  background-color:black;
+  color:white;
+  border:0px;
+  border-bottom:1px solid #1A77FF;
+  width:240px;
+  height:30px
+}
+.header button{
+  background-color:black;
+  color:white;
+  border:0px;
+  border-bottom:1px solid #1A77FF;
+  height:30px;
+}
+.menu {
+  /* position:relative;*/
+  background-color:#152230;
+  /*height:50px;*/
+  color:white;
+}
+.menu .container{
+  padding:0 40px;
+  margin:0;
+}
+.menu ul{
+  padding:0;
+
+}
+.menu li{
+  padding:15px 0;
+  text-align:center;
+  width:100px;
+  height:50px;
+  display:inline-block;
+  text-decoration:none;
+}
+.menu li:hover{
+  background-color:#1A77FF;
+}
+.menu .active{
+  background-color:#1A77FF;
+}
+
+.main{
+  color:white;
+  height:500px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/bass-bg.jpg) center center no-repeat;
+  background-size:100%;
+}
+
+.main .container{
+padding:20px;
+}
+.main h1{
+  font-size:70px;
+  margin-bottom:30px;
+}
+.main span{
+     border-bottom: 6px #1A77FF solid; 
+}
+.main p{
+  font-size:20px;
+}
+
+.supporting{
+  background-color:#F2F2F2;
+  padding:30px;
+}
+
+.supporting .row{
+  margin-bottom:30px;
+}
+.supporting .col-md-8{
+  padding:20px;
+  background-color:white;
+}
+.supporting .col-md-4{
+   padding:20px;
+  color:white;
+  background-color:#152230;
+}
+.supporting h3{
+  font-size:25px;
+  margin-bottom:20px;
+  font-weight:500;
+}
+.supporting .col-md-8 .date{
+  font-size:14px;
+  font-weight:100;
+  color:#747474;
+}
+.supporting .col-md-4 .date{
+   font-weight:100;
+font-size:14px;
+}
+.supporting p{
+  font-size:18px;
+  font-weight:600;
+  
+}
+.supporting span{
+   border-bottom: 3px #1A77FF solid; 
+}
+.supporting .col-md-12{
+  height:200px;
+  background: url(https://s3.amazonaws.com/codecademy-content/projects/newsroom/ad.jpg) center center no-repeat;
+}
+
+.footer {
+  color:white;
+  background-color:black;
+}
+.footer .container{
+  padding:20px;
+}
+.footer li{
+  margin-right:30px;
+  display:inline-block;
+  text-decoration:none;
+}
