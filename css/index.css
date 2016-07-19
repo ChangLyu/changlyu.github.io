@@ -10,14 +10,19 @@ html body{
 .header .container{
 	height: 100%;
 	margin:0px;
-	padding:15px 30px;
+	padding:15px 15px;
 }
 .header img{
 	border: 3px white solid;
 	height:50px;
 }
+.header span{
+	font-size: 18px;
+	color:white;
+    margin:5px ;
+}
 .header li{
-	margin: 15px 20px;
+	margin: 15px 15px;
 	font-size: 20px;
 	text-decoration: none;
 	display: inline-block;
