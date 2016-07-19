@@ -1,0 +1,46 @@
+html body{
+	margin:0;
+	padding:0;
+	font-family: 'Open Sans', sans-serif;
+}
+.header{
+	background-color: black;
+	padding: 10px 0;
+}
+.header h1{
+	color: white;
+	display: inline-block;
+	font-size: 40px;
+	font-weight: 600px;
+	margin: 20px;
+}
+.header img{
+	border: 3px white solid;
+	height:80px;
+}
+.header ul{
+	padding-top: 25px;
+}
+.header li{
+	margin-right: 10px;
+	background-color: black;
+	display: inline-block;
+	padding: 10px 20px;
+	border-bottom: 2px solid #967381;
+}
+.header .active{
+	background-color: #967381;
+}
+.header a{
+	font-size: 16px;
+	color: white;
+	text-decoration: none;
+}
+.header li:hover{
+	background-color: #967381;
+}
+.main .container{
+	font-size: 15px;
+	text-align: left;
+	padding: 4% 0;
+}
