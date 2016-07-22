@@ -2,25 +2,31 @@
 <html>
 <head>
 	<title>ChangLyu's Portfolio</title>
+	 <script src="https://code.jquery.com/jquery-2.2.4.js"></script> 
 	 <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
 	 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
      <link href="https://fonts.googleapis.com/css?family=Indie+Flower" rel="stylesheet">
+
     <link href='css/index.css' rel='stylesheet' type='text/css'>
 </head>
 <body>
 	<div class="header">
 		<div class="container">
 			<div class="row">
-				<div class="col-md-8">
+				<div class="col-md-1">
 					<img src="./img/my_photo.jpg" class="img-circle">
+				</div>
+				<div class="col-md-5">
 					<span>Hi there, I am looking for a position of junior software developer in Ottawa or Toronto!</span>
 				</div>
-
-				<div class="pull-right">
-					<ul>
-						<li><a href="pages/About.html">ABOUT</a></li>
-						<li><a href="pages/Resume.html">RESUME</a></li>
-						<li><a href="pages/Contact_Me.html">CONTACT ME</a></li>
+				<div id="menu" class="col-md-1 col-md-offset-3">
+					<p>MENU</p>
+				</div>
+				<div class="col-md-5">	
+					<ul class="menu_list">
+						<li ><a href="pages/About.html">ABOUT</a></li>
+						<li ><a href="pages/Resume.html">RESUME</a></li>
+						<li ><a href="pages/Contact_Me.html">CONTACT ME</a></li>
 					</ul>
 				</div>
 		</div>
@@ -42,17 +48,15 @@
   				</div>
   				</div>
   			</div>
-
-
   		</div>
 
 	<div class="main">
 		<div class="container-fluid">
 			<h2>This is my portfolio website. Now I added the HTML and CSS portfolio. Jquery is coming soon. </h2>
 			<div class="row">
-				<div class="col-md-4"><a href="./pages/Html_Css.html">HTML&CSS</a></div>
-				<div class="col-md-4"><a href="#">Jquery</a></div>
-				<div class="col-md-4"><a href="#">Angular</a></div>
+				<div class="col-md-4" ><a id="html" href="./pages/Html_Css.html">HTML&CSS</a></div>
+				<div class="col-md-4" ><a id="jquery" href="./pages/Jquery.html">Jquery</a></div>
+				<div class="col-md-4"><a id="angular" href="#">Angular</a></div>
 			</div>
 		</div>
 	</div>
@@ -65,5 +69,9 @@
 			</ul>
 		</div>
 	</div>
+	   
+	<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
+	<script src="js/index.js"></script>
+
 </body>
 </html>

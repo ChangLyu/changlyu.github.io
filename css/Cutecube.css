@@ -1,0 +1,43 @@
+html, body{
+	padding: 0px;
+	margin:0px;
+}
+body{
+/*	text-align: center;*/
+	padding: 150px;
+}
+.btn{
+	padding-top: 100px;
+	text-align: center;  
+}
+
+span{
+	width:100px;
+	border: 2px black solid;
+	padding:5px;
+}
+
+.myClass{
+	width:50px;
+	height:50px;
+	padding: 5px;
+	border:3px solid white;
+    border-radius:5px;
+    display: inline-block;
+
+}
+
+/*selecting will show the css when the element is been clicking*/
+.ui-selecting{
+/*background-color: red !important;*/
+}
+/*selected will show the css when the element finished clicking*/
+.ui-selected{
+
+	border:3px black solid;
+
+}
+
+.selected{
+	border:3px black solid;
+}
