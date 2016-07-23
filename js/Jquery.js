@@ -1,6 +1,7 @@
 var main=function(){
 
 	$('#menu').click(function(){
+		
 		var isVisible=$('.menu_list').is(':visible');
 
 		if(isVisible){
@@ -14,5 +15,23 @@ var main=function(){
 		});
 		}
 		});
+
+	var value=$('.main h2').text();
+	$('.main a').hover(
+		function(){	
+		if($(this).attr('id')==='cutecube'){
+			$('.main h2').text('This is a little Javascript game using Jquery designed by myself!');
+		}
+	
+	
+	},
+	function(){
+	  	if($(this).attr('id')==='cutecube'){
+			$('.main h2').text(value);
+		}
+	
+
+
+	});
 };
 $(document).ready(main);

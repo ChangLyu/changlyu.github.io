@@ -77,6 +77,7 @@ body{
 .main a{
 	color:black;
 }
+
 .main img:hover{
 	border: 2px white solid;
 }

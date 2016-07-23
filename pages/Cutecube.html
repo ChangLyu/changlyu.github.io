@@ -8,7 +8,29 @@
 
 	</head>
 	<body>
-		<div class="btn" ><span> click me!</span></div>
+		<div class=main>
+		<p> This game is based on HTML, CSS, javascript and JQuery. 
+		Click the block with same color then they will be both deleted.You can choose colorful block or image block, 
+		Images are from game league of legend(My favourite game!), which can be used for free on none-profit purpose . And all the code is my personal code.
+		The shorter time you take to delete all the block, the better you achieve!</p>
+		<div class='choose'>
+
+		level:
+			<select id='chooseBox'>
+			<option value="6*6">easy</option>
+			<option value="10*10" selected="selected">medium</option>
+			<option value="15*16">hard</option>
+			</select>
+		
+		background:
+			<select id='background'>
+			<option value="color" selected="selected">color</option>
+			<option value="image">image</option>
+			</select>
+		<br>
+			<span> click me to begin paly!</span>
+		</div>
+		</div>
 
 		<script src="https://code.jquery.com/ui/1.12.0/jquery-ui.js"></script>
 	<script src="../js/Cutecube.js"></script>
