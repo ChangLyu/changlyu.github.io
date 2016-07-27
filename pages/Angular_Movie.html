@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Angular_Book</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+<script src="http://ajax.googleapis.com/ajax/libs/angularjs/1.4.8/angular.min.js"></script>
+
+<link href="../css/Angular_Movie.css" rel="stylesheet"/>
+</head>
+<body ng-app="myApp" ng-controller="MainController">
+
+<div ng-repeat="movie in movies">
+	<div class="movie" ng-style="{'background-image': 'url(' + movie.background + ')'}">
+		<h1 class="title">{{movie.title}}</h1>
+	</div>
+	<div class="intro" >
+		<div class="row">
+			<div class="col-md-6">
+				<h3>{{movie.title}}</h3>
+				<p><strong>Directors:&nbsp;</strong>{{movie.directors}}</p>
+				<p><strong>Writers:&nbsp;</strong>{{movie.writers}}</p>
+				<p><strong>Stars:&nbsp;</strong>{{movie.stars}}</p>
+				Likes:&nbsp;<p class='vote like'  ng-click="plusOne($index)">{{movie.likes}}</p>
+				Dislikes:&nbsp;<p class='vote dislike'  ng-click="minusOne($index)">{{movie.dislikes}}</p>
+			</div>
+			<div class="col-md-6">
+			<h3>Storyline</h3>
+				<p>{{movie.storyline}}</p>
+			</div>
+		</div>
+		
+	</div>
+
+</div>
+	<!-- jquery -->
+	 <script src="https://code.jquery.com/jquery-2.2.4.js"></script> 
+	<!-- Modules -->
+	<script src="../js/Angular_Movie.js"></script>
+	<!-- controller -->
+	<script src="../js/controller/Angular_Movie_Controller.js"></script>
+
+
+</body>
+</html>
