@@ -1,0 +1,15 @@
+ <div class="main">
+        <div  ng-repeat="post in posts">
+			<p>{{post.title}}</p>
+			<a href="#/reply/{{$index}}">Reply</a>
+			<br>
+			<span   class="glyphicon glyphicon-plus-sign" ng-click="upVotes($index)"></span> 
+			Upvotes:{{post.upvotes}}
+			<hr>
+		</div>
+		<form ng-submit="addSuggestion()">
+				<h3>Submit your suggestions</h3>
+				<input type="text" placeholder="What are you thinking?.." ng-model="title"></input>
+				<button type="submit">Suggest</button>
+		</form>
+</div>       

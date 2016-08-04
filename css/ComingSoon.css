@@ -1,0 +1,17 @@
+html body{
+	margin:0;
+	padding: 0;
+}
+body{
+	background: url('../img/ComingSoon.jpg') no-repeat;
+	background-size:100%;
+	text-align: center;
+	opacity: 0.8;
+}
+
+ h1{
+    color: white;
+    font-size: 100px;
+	height: 100vh;
+	line-height:100vh;
+}

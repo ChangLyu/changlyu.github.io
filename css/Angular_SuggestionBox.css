@@ -1,0 +1,28 @@
+html body{
+	padding: 0;
+	margin:0;
+	font-family: 'Mirza', cursive;
+}
+body{
+	background: url('../img/suggestion_box/background.jpg') no-repeat center center fixed;
+	background-size: cover;
+}
+
+.header{
+	padding: 30px;
+	text-align: center;
+}
+.header h1{
+	display: inline-block;
+    margin: 30px;
+
+}
+.main , .reply{
+	padding: 30px 60px;
+}
+.main , .reply p{
+	font-size: 20px;
+}
+.main , .reply span:hover{
+	cursor: pointer;
+}

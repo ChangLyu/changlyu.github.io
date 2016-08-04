@@ -2,16 +2,19 @@
 <html>
 <head>
 <title>Angular_Book</title>
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
-<link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
- <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.5.6/angular.min.js"></script>
 
+<link href="https://fonts.googleapis.com/css?family=Mirza" rel="stylesheet">
+ <script src="../js/vendor/angular.min.js"></script>
+	<!-- jquery -->
+	<script   src="https://code.jquery.com/jquery-2.2.4.js"></script>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
 <link href="../css/Angular_Movie.css" rel="stylesheet"/>
 </head>
 <body ng-app="myApp" ng-controller="MainController">
 
 <div ng-repeat="movie in movies">
 	<div class="movie" ng-style="{'background-image': 'url(' + movie.background + ')'}">
+
 		<h1 class="title">{{movie.title}}</h1>
 	</div>
 	<div class="intro" >
@@ -33,12 +36,13 @@
 	</div>
 
 </div>
-	<!-- jquery -->
-	 <script src="https://code.jquery.com/jquery-2.2.4.js"></script> 
+
 	<!-- Modules -->
 	<script src="../js/Angular_Movie.js"></script>
 	<!-- controller -->
 	<script src="../js/controller/Angular_Movie_Controller.js"></script>
+	<!-- services -->
+	<script src="../js/services/Movies.js"></script>
 
 
 </body>
