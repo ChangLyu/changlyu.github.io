@@ -30,7 +30,7 @@ var main=function(){
 			}else if($(this).attr('id')==='jquery'){
 				$(this).text('Little game and coming more!');
 			}else{
-				$(this).text('First Angular about favourite books!');
+				$(this).text('Two angular projects!');
 			}
 			});
 	},
