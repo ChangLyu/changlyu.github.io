@@ -39,7 +39,7 @@ var main=function(){
 				if($(this).attr('id')==='html'){
 				$(this).text('HTML&CSS');
 			}else if($(this).attr('id')==='jquery'){
-				$(this).text('Jquery');
+				$(this).text('Jquery&JS');
 			}else{
 				$(this).text('Angular');
 			}

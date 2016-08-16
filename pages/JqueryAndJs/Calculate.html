@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Chang's Calculator</title>
+				<script src="../../js/vendor/jquery-2.2.4.js"></script>
+		<script type="text/javascript" src="../../js/Calculator.js"></script>
+
+		<link     rel='stylesheet' href="../../css/Calculate.css">
+	</head>
+	<body>
+		<div>
+			<h1>My first <span onClick="changeColor()"><i>calculator</i></span>.</h1>
+			<h3>Try to click "calculator"</h3>
+			<table>
+				<tr><input id="display" type="text" value="0"></tr>
+				<tr>
+					<td><input type="button" value="1" onclick="display('1')"></td>
+					<td><input type="button" value="2" onclick="display('2')"></td>
+					<td><input type="button" value="3" onclick="display('3')"></td>
+					<td><input type="button" value="+" onclick="cal('+')"></td>
+					<td><input type="button" value="reset" onclick="reset('+')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="4" onclick="display('4')"></td>
+					<td><input type="button" value="5" onclick="display('5')"></td>
+					<td><input type="button" value="6" onclick="display('6')"></td>
+					<td><input type="button" value="-" onclick="cal('-')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="7" onclick="display('7')"></td>
+					<td><input type="button" value="8" onclick="display('8')"></td>
+					<td><input type="button" value="9" onclick="display('9')"></td>
+					<td><input type="button" value="*" onclick="cal('*')"></td>
+				</tr>
+				<tr>
+					<td><input type="button" value="." onclick="displayDot()"></td>
+					<td><input type="button" value="0" onclick="display('0')"></td>
+					<td><input type="button" value="/" onclick="cal('/')"></td>
+					<td><input type="button" value="=" onclick="equals()"></td>
+				</tr>
+			</table>
+		</div>
+	</body>
+</html>

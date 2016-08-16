@@ -22,16 +22,15 @@ var main=function(){
 		if($(this).attr('id')==='cutecube'){
 			$('.main h2').text('This is a little Javascript game using Jquery designed by myself!');
 		}
+		if($(this).attr('id')==='calculate'){
+			$('.main h2').text('Easy calculator with the "+ - * /" operations and changable button colors. ');
+		}
 	
 	
 	},
-	function(){
-	  	if($(this).attr('id')==='cutecube'){
-			$('.main h2').text(value);
-		}
-	
-
-
+	function(){  	
+		$('.main h2').text(value);
+		
 	});
 };
 $(document).ready(main);
