@@ -1,0 +1,50 @@
+@include keyframes(left){
+	100%{ @include transform(rotate3d(0,1,0,-90deg) translateX(-75px));
+	      @include transform-origin(0 50%);}
+}	
+
+@include keyframes(right){
+	100%{@include transform(rotate3d(0,1,0,90deg) translateX(75px));
+		@include transform-origin(100% 50%);
+	    }
+}
+
+@include keyframes(up){
+	100%{@include transform(rotate3d(1,0,0,90deg) translateY(-75px));
+		 @include transform-origin(50% 0);
+	   }
+}
+
+@include keyframes(down){
+	100%{@include transform(rotate3d(1,0,0,-90deg) translateY(75px));
+		 @include transform-origin(50% 100%);
+	  }
+}
+
+@include keyframes(front){
+	100%{@include transform(translateZ(75px));
+	     }
+}
+
+@include keyframes(back){
+	100%{@include transform(translateZ(-75px));
+	     }
+}
+
+@include keyframes(spin) {
+  25%{@include transform(rotate3d(1,1,1,180deg) scale3d(0.75,0.75,0.75) translate3D(100px,100px,100px));}
+
+  50%{@include transform(rotate3d(1,1,1,360deg) scale3d(0.5,0.5,0.5) translate3D(0px,0px,0px));}
+
+  75%{@include transform(rotate3d(1,1,1,180deg) scale3d(0.75,0.75,0.75) translate3D(-100px,-100px,-100px));}
+
+  100%{@include transform(rotate3d(1,-1,1,360deg) scale3d(1,1,1) translate3D(0px,0px,0px));}
+}
+
+@include keyframes(changeColor){
+	0% {background-color:rgba(255,248,220,0.3);}
+	25% {background-color: rgba(153,102,255,0.4);}
+	50% {background-color: rgba(0, 153, 153,0.5);}
+	75%{background-color: rgba(230, 230, 0,0.4);}
+	100%{background-color:rgba(191, 64, 128,0.3) }
+}
