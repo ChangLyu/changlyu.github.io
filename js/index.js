@@ -26,7 +26,7 @@ var main=function(){
 		function(){
 			$(this).addClass('active', 'fast',function(){
 				if($(this).attr('id')==='html'){
-				$(this).text('Portfolio of HTML and CSS, which are single page designs.');
+				$(this).text('Single pages of HTML and CSS');
 			}else if($(this).attr('id')==='jquery'){
 				$(this).text('Little game and coming more!');
 			}else{
@@ -44,6 +44,17 @@ var main=function(){
 				$(this).text('Angular');
 			}
 			});
+	});
+
+	$('.me p').click(function(){
+		 var ele=$('.about');
+		if( ele.css('display') == 'none')
+  		   $('.about').show('slow');
+		else
+		{
+   		  $('.about').hide('slow');   			
+		}
+/*      $('.about').toggle('slow'); not work in ie*/
 	});
 
 };
