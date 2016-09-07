@@ -3,46 +3,46 @@
 <head>
 	<title>Chang's Audio Player</title>
 	<link href="../../css/reset.css" rel="stylesheet" type="text/css"/>
-	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/>
+	<link href='http://fonts.googleapis.com/css?family=Lobster' rel='stylesheet' type='text/css'/> 
 	<script src="../../js/vendor/jquery-2.2.4.js"></script>
 	<script src="../../js/vendor/jquery-ui.js"></script>
 	<script src="../../js/AudioPlayer.js"></script>
-	<link href="../../css/AudioPlayer.css" rel="stylesheet"/>
+	<link href="../../css/Audio_Player.css" rel="stylesheet"/>
 </head>
 <body>
-<!-- <audio controls>
-  <source src="../../sound/the city of sky.mp3" type="audio/mpeg">
-Your browser does not support the audio element.
-</audio> -->
-
 	
 	<div class="container">
 	<div class="wrap">
 	<div class="player">
 
-		<h1>Chang's HTML 5 <span id='h1'>Audio Player(Not for IE)</span></h1>
-		
-			<img class="cover" src="../../img/AudioPlayer/the_city_in_sky.jpg" alt="#">
-			<span id="list_icon">list</span>
+		<h1>Chang's HTML 5 Audio Player(Not for IE)</h1>
+		<span>
+			<img class="cover" src="../../img/AudioPlayer/Heathens.jpg" alt="#">
+			<span id="song_name">Heathens</span>
+			<span id="list_icon" class="button">list</span>
 		    <span id="list">
-		    	<sl>
-		    		<li>The City Of Sky</li>
-		    		<li>Wish You Were There</li>
-		    		<li>Cheap Thrills</li>
-		    		<li>Closer</li>
-		    		<li>Cold Water</li>
-		    		<li>Heathens</li>
-		    	</sl>
+		    	<ul>
+		    		<li id="sixth">Heathens</li>
+		    		<li id="first">The City Of Sky</li>
+		    		<li id="second">Wish You Were There</li>
+		    		<li id="third">Cheap Thrills</li>
+		    		<li id="fourth">Closer</li>
+		    		<li id="fifth">Cold Water</li>
+		    		
+		    	</ul>
 		    </span>
+		</span>    
 		<div class="audio_part">
+		    <span id="begin_time">00:00</span>
 			<input type="range" id="track"  step="1" min ="0" value="0"  max="100" />
-
+			<span id="left_time">00:00</span>
 			<div class="voice">
-				<img id="mute" src="../../img/AudioPlayer/speaker.png"></img>
+				<img id="mute" src="../../img/AudioPlayer/speaker.png"/>
 				<input type="range" id="volume"  step="0.1" min ="0" value="1"  max="1" />
 			</div>
-			<span id="play" href="" title="">play</span>	
-			<span id="close" href="" title="">end</span>
+			<span id="play" class="button">pause</span>	
+			<span id="method" class="button">repeat</span>
+			<span id="close" class="button">end</span>
 		</div>
 	</div>
     </div>

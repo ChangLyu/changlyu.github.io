@@ -65,7 +65,7 @@ var main=function(){
 
   $('body').on('click','.myClass', function(){
         /*once clicked add the sound*/
-       var snd=new Audio('../sound/Tiny Button Push-SoundBible.com-513260752.mp3');
+       var snd=new Audio('../../sound/Tiny Button Push-SoundBible.com-513260752.mp3');
        snd.play();
 
         /*no element choosed before*/

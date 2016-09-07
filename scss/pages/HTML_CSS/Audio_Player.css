@@ -1,0 +1,339 @@
+@-webkit-keyframes changeColor {
+  0% {
+    background-color: #ADD8E6; }
+  25% {
+    background-color: #66CDAA; }
+  75% {
+    background-color: #98FB98; }
+  100% {
+    background-color: #ADD8E6; } }
+@-moz-keyframes changeColor {
+  0% {
+    background-color: #ADD8E6; }
+  25% {
+    background-color: #66CDAA; }
+  75% {
+    background-color: #98FB98; }
+  100% {
+    background-color: #ADD8E6; } }
+@keyframes changeColor {
+  0% {
+    background-color: #ADD8E6; }
+  25% {
+    background-color: #66CDAA; }
+  75% {
+    background-color: #98FB98; }
+  100% {
+    background-color: #ADD8E6; } }
+@-webkit-keyframes changeColor2 {
+  0% {
+    color: white; }
+  50% {
+    color: #FFA07A; }
+  100% {
+    color: white; } }
+@-moz-keyframes changeColor2 {
+  0% {
+    color: white; }
+  50% {
+    color: #FFA07A; }
+  100% {
+    color: white; } }
+@keyframes changeColor2 {
+  0% {
+    color: white; }
+  50% {
+    color: #FFA07A; }
+  100% {
+    color: white; } }
+body, html {
+  width: 100%;
+  height: 100%;
+  font-family: 'Lobster', cursive;
+  -webkit-animation: changeColor 10s infinite linear;
+  -moz-animation: changeColor 10s infinite linear;
+  animation: changeColor 10s infinite linear;
+  /*     @include   background(linear-gradient(to right,rgba(51, 51, 51,0.5),white,rgba(51, 51, 51,0.5)));  */ }
+
+h1 {
+  font-size: 25px;
+  letter-spacing: 2px;
+  margin: 10px;
+  -webkit-animation: changeColor2 10s infinite linear;
+  -moz-animation: changeColor2 10s infinite linear;
+  animation: changeColor2 10s infinite linear; }
+
+.container {
+  height: 100%;
+  width: 100%;
+  display: table; }
+
+.wrap {
+  text-align: center;
+  display: table-cell;
+  height: 100%;
+  vertical-align: middle; }
+
+.player {
+  display: inline-block; }
+
+img.cover {
+  opacity: 0.8;
+  width: 250px;
+  height: 250px;
+  border: 4px solid white;
+  border-radius: 250px;
+  position: relative; }
+
+span#song_name {
+  color: white;
+  background-color: rgba(102, 205, 170, 0.5);
+  position: absolute;
+  font-size: 20px;
+  width: 250px;
+  height: 250px;
+  border-radius: 250px;
+  border: 4px solid white;
+  left: 50%;
+  -webkit-transform: translateX(-50%);
+  -moz-transform: translateX(-50%);
+  -ms-transform: translateX(-50%);
+  -o-transform: translateX(-50%);
+  transform: translateX(-50%);
+  line-height: 250px;
+  display: none;
+  pointer-events: none; }
+
+span#list_icon, span#list {
+  position: absolute;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  border: 2px solid white;
+  border-radius: 10px;
+  display: inline-block; }
+
+span#list {
+  margin-left: 90px;
+  text-align: left;
+  display: none; }
+
+span#list li {
+  margin: 3px; }
+
+span#list li:hover {
+  color: #FFA07A; }
+
+span#begin_time, span#left_time {
+  display: inline-block;
+  padding: 3px;
+  margin: 3px;
+  width: 45px;
+  color: white; }
+
+/* can't use @extend right now, becaue @extend will be a, b,c {}, 
+which will not implemented in this situation.
+ mixin will be a{}, b{},c {} */
+input#track {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 7px;
+  padding: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+  margin: 10px; }
+
+input#track::-moz-range-track {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 7px;
+  padding: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+  margin: 10px; }
+
+input#track::-ms-track {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  width: 300px;
+  height: 7px;
+  padding: 2px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white;
+  margin: 10px; }
+
+img#mute {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  border: 2px solid white;
+  border-radius: 8px;
+  width: 20px;
+  height: 20px;
+  padding: 2px; }
+
+img#mute:hover {
+  border: 2px solid black; }
+
+input#volume {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white; }
+
+input#volume::-moz-range-track {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white; }
+
+input#volume::-ms-track {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  display: inline-block;
+  vertical-align: middle;
+  padding: 2px;
+  height: 4px;
+  cursor: pointer;
+  box-shadow: 1px 1px 1px white;
+  border: 1px solid white;
+  border-radius: 2px;
+  background-color: white; }
+
+input#track::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px; }
+
+input#track::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px; }
+
+input#track::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px; }
+
+input#volume::-webkit-slider-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px; }
+
+input#volume::-moz-range-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px; }
+
+input#volume::-ms-thumb {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  -ms-appearance: none;
+  -o-appearance: none;
+  appearance: none;
+  height: 20px;
+  width: 20px;
+  border-radius: 20px;
+  background-color: black;
+  padding: 0px; }
+
+span.button {
+  display: inline-block;
+  width: 50px;
+  padding: 10px;
+  margin: 10px;
+  cursor: pointer;
+  color: white;
+  -webkit-animation: changeColor 10s infinite linear;
+  -moz-animation: changeColor 10s infinite linear;
+  animation: changeColor 10s infinite linear;
+  border: 2px solid white;
+  border-radius: 3px; }
+
+span.button:hover {
+  box-shadow: 2px 2px 2px #000000; }
+
+/*# sourceMappingURL=Audio_Player.css.map */
